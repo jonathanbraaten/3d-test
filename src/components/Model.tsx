@@ -3,7 +3,7 @@ import React, { useRef } from 'react';
 import { useGLTF, Text, MeshTransmissionMaterial } from '@react-three/drei';
 import { useFrame, useThree } from '@react-three/fiber';
 export const Model = () => {
-  const { nodes } = useGLTF('public/LovhaLogo01.glb');
+  const { nodes } = useGLTF('/LovhaLogo01.glb');
   const { viewport } = useThree();
   const mesh = useRef();
   useFrame(() => {
